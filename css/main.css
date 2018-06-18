@@ -1,1 +1,69 @@
 /* Los estilos de tu proyecto */
+body {
+  border: 0;
+  margin: 0;
+}
+
+nav {
+  margin-top: 0;
+  padding: 3%;
+}
+
+.row {
+  margin: 0;
+}
+
+.fondo {
+  background-image: url(../assets/images/taxi1.jpg);
+  background-size: cover;
+  background-repeat: none;
+}
+
+.contenedoram {
+  padding-top: 15%;
+  padding-bottom: 18%;
+  padding-left: 5%;
+  padding-right: 0;
+}
+
+hr {
+  width: 4%;
+}
+
+.boton {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 4%;
+}
+
+.button {
+  border-radius: 5px;
+  border: 0;
+}
+
+.celular {
+  padding-top: 10%;
+  padding-bottom: 4%;
+  padding-left: 40%;
+  width:100%;
+}
+
+.titulo {
+  padding-top: 10%;
+  padding-left: 30%;
+}
+
+.parrafo {
+  padding-left: 30%;
+}
+
+.fondo1 {
+  background-image: url(../assets/images/conduce.jpg);
+  background-size: cover;
+  background-repeat: none;
+}
+
+.mapa {
+  padding: 5%;
+  width: 60%;
+}

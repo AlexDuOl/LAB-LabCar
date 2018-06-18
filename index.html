@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
     <link rel="stylesheet" href="css/main.css">
@@ -12,91 +13,127 @@
   <body>
     <header> <!-- Logo y barra -->
       <nav class="row valign-wrapper card-panel white">
-        <img class="col s1" src="assets/images/logoForma.png" alt="">
-        <a href="#" class="col s1 offset-s8 black-text text-darken-2">Viaja</a>
-        <a href="#" class="col s1 black-text text-darken-2">Conduce</a>
-        <a href="#" class="col s1 black-text text-darken-2">Inicia sesión</a>
+        <div id="burger" class="col s1 menu"> <!-- Menu oculto -->
+          <img src="assets/images/menu.svg" alt="">
+        </div>
+        <div class="col s2 left-align menu"> <!-- Logo -->
+          <img src="assets/images/logoForma.png" alt="">
+        </div>
+        <ul id="nav2" class="col s3 offset-s5"> <!-- Menu visible-->
+          <li><a href="#" class="black-text text-darken-2">Viaja</a></li>
+          <li><a href="#" class="black-text text-darken-2">Conduce</a></li>
+          <li><a href="#" class="black-text text-darken-2">Inicia sesión</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-      <section class="row fondo"> <!-- Primera sección Imagen de fondo taxi-->
+      <section class="row fondo responsive-img"> <!-- PRIMERA SECCION Imagen de fondo taxi-->
         <div class="row contenedoram"> <!-- Contenedor amarillo-->
           <div class="col s4 offset-s8 section card-panel amber accent-4">
             <h5 class="white-text text-darken-2">Disfruta del viaje</h5>
             <h5 class="white-text text-darken-2">Eres dueño de tu tiempo</h5>
             <p class="white-text section text-darken-2">Viaja con <b>Lab&ltar</b></p>
-            <button class="black-text text-darken-2 button" type="button" name="button"><b>REGÍSTRATE</b></button>
+            <button class="black-text text-darken-2 card-panel #ffffff white boton2" type="button" name="button"><strong>REGÍSTRATE</strong></button>
           <div class="row boton">
             <hr class="col s4">
-            <p class=" col s4 white-text text-darken-2">o bien</p>
+            <div class="col s4">
+              <p class=" col s12 white-text text-darken-2 center-align texto">o bien</p>
+            </div>
             <hr class="col s4">
-            <button class="col s7 black-text text-darken-2 button" type="button" name="button"><b>Conviértete en un conductor</b></button>
+            <button class="black-text text-darken-2 card-panel #ffffff white boton2" type="button" name="button"><strong>Conviértete en un conductor</strong></button>
           </div>
          </div>
        </div>
      </section>
-      <section class="row amber accent-4"> <!-- Segunda sección fondo amarillo-->
-        <div class="col 5 contenedorlineas">
-          <img class="celular" src="assets/images/iPhone6Plus.png" alt="">
+      <section class="row amber accent-4 yellow"> <!-- SEGUNDASECCION fondo amarillo-->
+        <br>
+        <div>
+          <div class="col s9 contenedorlineas">
+            <div class="col s6">
+              <img class="celular responsive-img" src="assets/images/iPhone6Plus.png" alt="">
+            </div>
+            <div class="col s6 white-text section text-darken-2">
+              <h5 class="white-text text-darken-2 titulo">Descarga la nueva app</h5>
+              <p class="parrafo">La versión actualizada de LabCar
+              esta llena de nuevas funciones para
+              llegar a donde quieras aún más fácil
+              y rápido</p>
+              <p class="parrafo">Con solo tocar un botón, un auto
+              llega justo a tu ubicación. Súbete y
+              no te preocupes: tu conductor sabe
+              exactamente a dónde ir.</p>
+            </div>
+          </div>
+          <div class="col s3"></div>
         </div>
-        <div class="col s4 white-text section text-darken-2">
-          <h5 class="titulo">Descarga la nueva app</h5>
-          <p class="parrafo">La versión actualizada de LabCar
-          esta llena de nuevas funciones para
-          llegar a donde quieras aún más fácil
-          y rápido</p>
-          <p class="parrafo">Con solo tocar un botón, un auto
-          llega justo a tu ubicación. Súbete y
-          no te preocupes: tu conductor sabe
-          exactamente a dónde ir.</p>
-        </div>
+        <br>
       </section>
-      <section class="row fondo1"> <!-- Tercera sección fondo conductor-->
-        <div class="row">
-          <div class="col s4 offset-s8">
-            <h5 class="titulo">Conduce cuando quieras</h5>
-            <p class="parrafo">LabCar es una opción flexible para alcanzar
+      <section class="row fondo1"> <!-- TERCERA SECCION fondo conductor-->
+        <div class="row conduce">
+          <div class="col s4 offset-s8 opacidad">
+            <h5 class="white-text text-darken-2 titulo1">Conduce cuando quieras</h5>
+            <p class="white-text text-darken-2">LabCar es una opción flexible para alcanzar
             tus metas financieras.</p>
-            <button class="col s7 black-text text-darken-2 button amber accent-4" type="button" name="button">
-              <b>Conviértete en conductor</b>
+            <button class="white-text text-darken-2 card-panel amber accent-4 boton2" type="button" name="button">
+              <strong>Conviértete en conductor</strong>
             </button>
           </div>
         </div>
       </section>
-      <section class="row amber accent-4"> <!-- Cuarta sección fondo amarillo-->
-        <div class="col s6">
-          <div class="row">
-            <h5 class="titulo white-text text-darken-2">Tarifas</h5>
-            <p class="parrafo white-text text-darken-2">Consulta las tarifas LabCar aquí</p>
+      <section class="row amber accent-4"> <!-- CUARTA SECCION fondo amarillo-->
+        <div class="col s6"><!-- Contenedor principal-->
+          <div class="row"><!-- Texto-->
+            <h5 class="white-text text-darken-2 titulo">Tarifas</h5>
+            <p class="white-text text-darken-2 parrafo">Consulta las tarifas LabCar aquí</p>
           </div>
-          <div class="row">
-            <div class="col s12">
-              <img src="assets/images/shape.png" alt="">
-
-            </div>
-            <div class="row">
-              <div class="col s12">
-                <img src="assets/images/shape2.png" alt="">
-
+          <div class="row"><!-- Input 1-->
+            <div class="col s12 input-field">
+              <div class="col s2 offset-s1 punto">
+                <img class="responsive-img punto" src="assets/images/shape.png" alt="">
+              </div>
+              <div class="col s6">
+                <label class="white-text text-darken-2 materialize-textarea" for="textarea1">Ingrese su punto de partida</label>
+                <textarea class="white-text text-darken-2 materialize-textarea"></textarea>
               </div>
             </div>
-            <div class="row">
-              <button class="col s2 black-text text-darken-2 button #ffffff white" type="button" name="button">¡TRAZAR RUTA!</button>
+          </div>
+          <div class="row"><!-- Input 2-->
+            <div class="col s12 input-field">
+              <div class="col s2 offset-s1 punto">
+                <img class="responsive-img punto" src="assets/images/shape2.png" alt="">
+              </div>
+              <div class="col s6">
+                <label class="white-text text-darken-2 materialize-textarea" for="textarea1">Ingrese su destino</label>
+                <textarea class="white-text text-darken-2 materialize-textarea"></textarea>
+              </div>
             </div>
           </div>
+          <div class="row"><!-- Boton-->
+            <div class="col s3"></div>
+            <button class="black-text text-darken-2 card-panel #ffffff white boton2" type="button" name="button"><strong>¡TRAZAR RUTA!</strong></button>
+          </div>
         </div>
-        <div class="col s6">
-          <img class="mapa" src="assets/images/mapa.png" alt="">
+        <div class="col s6"><!-- Mapa-->
+          <img class="responsive-img mapa" src="assets/images/mapa.png" alt="">
         </div>
       </section>
     </main>
-    <footer class="row grey darken-4">
+    <footer class="row grey darken-4"> <!-- QUINTA SECCION fondo amarillo-->
       <div class="row">
-        <img class="col s1" src="assets/images/logoBlanco.png" alt="">
+        <img class="responsive-img menu logo" src="assets/images/logoBlanco.png" alt="">
       </div>
         <hr class="col s10 offset-s1 #ffffff white">
       <div class="row">
-        <div class="col s3">
-
+        <div class="col s2 offset-s1">
+          <div class="row">
+            <div class="col s12 iconos">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-linkedin-in"></i>
+              <i class="fab fa-apple"></i>
+              <i class="fas fa-play"></i>
+            </div>
+          </div>
         </div>
         <div class="col s3 white-text text-darken-2">
           <ul>
@@ -122,14 +159,19 @@
             <li>Coders</li>
           </ul>
         </div>
-        <div class="col s3">
-          <img src="assets/images/appstore.png" alt="">
-          <img src="assets/images/enBadgeWebGeneric.png" alt="">
+        <div class="col s3 apps">
+          <div class="row">
+            <img class="col s6 responsive-img" src="assets/images/appstore.png" alt="">
+          </div>
+          <br>
+          <div class="row">
+            <img class="col s6 responsive-img" src="assets/images/enBadgeWebGeneric.png" alt="">
+          </div>
         </div>
       </div>
       <hr class="col s10 offset-s1 #ffffff white">
       <div class="row">
-        <p class="col s3 white-text text-darken-2">&copy;2017 LabCar technologies, Inc.</p>        
+        <p class="col s3 offset-s1 white-text text-darken-2">&copy;2017 LabCar technologies, Inc.</p>
       </div>
     </footer>
     <script type="text/javascript" src="js/app.js"></script>

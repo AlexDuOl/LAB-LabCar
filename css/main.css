@@ -1,4 +1,4 @@
-/* Los estilos de tu proyecto */
+/*Generales*/
 body {
   border: 0;
   margin: 0;
@@ -9,10 +9,24 @@ nav {
   padding: 3%;
 }
 
+.menu {
+  margin-top: 1.5%;
+}
+
 .row {
   margin: 0;
 }
 
+.titulo {
+  padding-top: 10%;
+  padding-left: 30%;
+}
+
+.parrafo {
+  padding-left: 30%;
+}
+
+/*Primera seccion Imagen taxi*/
 .fondo {
   background-image: url(../assets/images/taxi1.jpg);
   background-size: cover;
@@ -26,21 +40,13 @@ nav {
   padding-right: 0;
 }
 
-hr {
-  width: 4%;
-}
-
-.boton {
-  padding-top: 5%;
-  padding-bottom: 5%;
-  padding-left: 4%;
-}
-
-.button {
+.boton2 {
   border-radius: 5px;
   border: 0;
+  margin-left: 3%;
 }
 
+/*Segunda seccion*/
 .celular {
   padding-top: 10%;
   padding-bottom: 4%;
@@ -48,22 +54,97 @@ hr {
   width:100%;
 }
 
-.titulo {
-  padding-top: 10%;
-  padding-left: 30%;
+.contenedorlineas {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
 }
 
-.parrafo {
-  padding-left: 30%;
+.yellow {
+  padding-bottom: 2%;
 }
 
+
+/*Tercera seccion*/
 .fondo1 {
   background-image: url(../assets/images/conduce.jpg);
   background-size: cover;
   background-repeat: none;
 }
 
+.conduce {
+  padding-top: 0%;
+  padding-bottom: 10%;
+}
+
+.opacidad {
+  background: rgba(0, 0, 0, .5);
+  margin-bottom: 10%;
+}
+
+.titulo1{
+  padding-top: 10%;
+}
+
+.texto {
+  padding-top: 0;
+  margin-top:  0;
+}
+
+/*Cuarta seccion*/
+.input-field {
+  margin-left: 10%;
+}
+
+.punto {
+  padding-left: 80%;
+  padding-top: 20%;
+}
+
 .mapa {
-  padding: 5%;
-  width: 60%;
+  border: 1px solid white;
+  margin: 2%;
+  padding: 1%;
+  width: 65%;
+}
+
+/*Quinta seccion*/
+.logo {
+  margin-left: 8.5%;
+}
+
+.apps {
+  margin-top: 10%;
+  width: 25%;
+}
+
+li {
+  padding-top: 4%;
+}
+
+i {
+  color: white;
+  padding: 2px;
+}
+
+.iconos {
+  margin-top: 130%;
+}
+
+
+/*Menus*/
+#burger {
+  display: none;
+}
+
+@media (max-width:576px) {
+ #burger {
+   display: block;
+ }
+}
+
+@media (max-width:576px) {
+ #nav2 {
+   display: none;
+ }
 }

@@ -46,6 +46,13 @@ nav {
   margin-left: 3%;
 }
 
+hr {
+  border: none;
+}
+
+.labCar{
+  margin-left: 3%;
+}
 /*Segunda seccion*/
 .celular {
   padding-top: 10%;
@@ -64,6 +71,10 @@ nav {
   padding-bottom: 2%;
 }
 
+.mostrarCel {
+  border: 1px solid white;
+  margin-left: 8%;
+}
 
 /*Tercera seccion*/
 .fondo1 {
@@ -131,6 +142,9 @@ i {
   margin-top: 130%;
 }
 
+.icono {
+  margin-top: 4%;
+}
 
 /*Menus*/
 #burger {
@@ -145,6 +159,23 @@ i {
 
 @media (max-width:576px) {
  #nav2 {
+   display: none;
+ }
+}
+
+/*Primera sección*/
+.mostrar {
+  display: none;
+}
+
+@media (max-width:576px) {
+ .mostrar {
+   display: block;
+ }
+}
+
+@media (max-width:576px) {
+ .ocultar {
    display: none;
  }
 }

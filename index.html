@@ -22,7 +22,26 @@
         <ul id="nav2" class="col s3 offset-s5"> <!-- Menu visible-->
           <li><a href="#" class="black-text text-darken-2">Viaja</a></li>
           <li><a href="#" class="black-text text-darken-2">Conduce</a></li>
-          <li><a href="#" class="black-text text-darken-2">Inicia sesión</a></li>
+          <li><a href="#modal1" class="black-text text-darken-2 modal-trigger">Inicia sesión</a>
+            <div id="modal1" class="modal teal lighten-1"> <!-- Modal-->
+              <div class="modal-content">
+                <img class="usuario" src="assets/images/usuario.png" alt="">
+                <div class="materialContainer">
+                    <div class="input">
+                      <label  class="white-text responsive-text text-darken-2" for="name">Username</label>
+                      <input type="text" name="name" id="name">
+                    </div>
+                    <div class="input">
+                      <label class="white-text responsive-text text-darken-2" for="pass">Password</label>
+                      <input type="password" name="pass" id="pass">
+                    </div>
+                    <div class="button login">
+                      <button class="amber accent-4 card-panel white-text responsive-text text-darken-2 boton2"><span>LOGING</span></button>
+                    </div>
+                    <a href="" class="pass-forgot">Forgot password? Click Here</a>
+                </div>
+              </div>
+          </li>
         </ul>
       </nav>
     </header>
@@ -89,7 +108,7 @@
       <section class="row fondo1 responsive-img"> <!-- TERCERA SECCION fondo conductor-->
         <div class="row conduce ocultar">
           <div class="col s4 offset-s8 opacidad">
-            <h5 class="white-textresponsive-text text-darken-2 titulo1">Conduce cuando quieras</h5>
+            <h5 class="white-text responsive-text text-darken-2 titulo1">Conduce cuando quieras</h5>
             <p class="white-text responsive-text text-darken-2">LabCar es una opción flexible para alcanzar
             tus metas financieras.</p>
             <button class="white-text responsive-text text-darken-2 card-panel amber accent-4 boton2" type="button" name="button">
@@ -273,6 +292,7 @@
         <p class="col s12 offset-s1 white-text text-darken-2">&copy;2017 LabCar technologies, Inc.</p>
       </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
   </body>
 </html>
